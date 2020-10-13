@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<!-- Created by Karla Rodrigues - Created on March 9, 2019-->
+<html lan="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- #BeginTemplate "TemplateAssigment1.dwt" -->
+
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <!-- #BeginEditable "doctitle" -->
+  <title>Untitled 1</title>
+  <!-- #EndEditable -->
+  <meta content="Restaurant Delivery Web Design Centennial College" name="keywords" />
+  <meta content="Restaurant Delivery to order the best food * Assigment Web Design Class - Centennial College" name="description" />
+  
+    
+  <link href="Assignment1.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  .auto-style1 {
+	  border: 2px solid #D5ECB3;
+	  padding: 4px;
+  }
+    
+  </style>
+</head>
+
+<body>
+
+<!--ALLPAGE-->
+<div id="AllPage">
+
+
+<!--BANNER-->
+<div id="Banner" style="position: absolute; left: -100px; top: 0px; width: 1200px; height: 130px; z-index: 1" class="auto-style1">
+<h1>Mangiare</h1>
+<h2>delivery</h2>
+<!--img alt="Mangiare"  src="mangiare.jpg" width="110" height="110" class="img-style3"--> 
+<h4> 
+<br> cellphone 1(437)999 22-59
+<br> delivery@mangiare.ca </h4>
+</div><!-- Banner-->
+
+
+<!--MENUBANNER-->
+<div id="MenuBanner" style="position: absolute; left: -100px; top: 150px; width: 1200px; height: 30px; z-index: 2" class="auto-style1">
+	<menuban>
+	   <a href="Home.html">Home</a> |
+	   <a href="Listing.html">Listing</a> |
+	   <a href="Estimate.html">Estimate</a> |
+	   <a href="Membership.html">Membership</a> |
+	   <a href="Location.html">Location</a> |
+	   <a href="About.html">About Us</a> |
+	   
+	</menuban>
+</div><!-- MenuBanner-->
+
+<!--CONTENT-->
+<!-- #BeginEditable "Content" -->
+<div id="Content" style="position: absolute; left: -100px; top: 200px; width: 1200px; height: 420px; z-index: 4" class="auto-style1">
+ <content>
+
+            <form name="Personal">
+
+                <section id="information">
+
+                <table class="information" style="position: absolute; left: 10px; top: 20px">
+                
+                	<!---- Personal Information --->
+                    <tr> <th>Personal Information</th> </tr>
+                    
+                    <tr>
+                        <td for="FName">First Name:</td>
+                        <td><input type="text" id="FName" name="FName" size="30" tabindex="1" /></td>
+                    </tr>
+                    <tr>
+                        <td for="LName">Last Name:</td>
+                        <td><input type="text" id="LName" name="LName" size="30" tabindex="3" /></td>
+                    </tr>
+                    <tr>
+                        <td for="Age">Age:</td>
+                        <td><input type="text" id="Age" name="Age" size="10" tabindex="5" /></td>
+                    </tr>
+                    <tr>
+                        <td for="Address">Address:</td>
+                        <td><input type="text" id="Address" name="Address" size="50" tabindex="7" /></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="text" id="Address2" name="Address2" size="50" tabindex="9" /></td>
+                    </tr>
+                    <tr>
+                        <td for="City">City:</td>
+                        <td><input type="text" id="City" name="City" size="30" tabindex="11" /></td>
+                    </tr>
+                    <tr>
+                        <td for="PCode">Post Code:</td>
+                        <td><input type="text" id="PCode" name="PCode" size="10" tabindex="13" /></td>
+                    </tr>
+                    <tr>
+                        <td for="Province">Province</td>
+                        <td>
+                            <select name="Province" id="Province">
+                                <option>QC</option>
+                                <option>MN</option>
+                                <option>SK</option>
+                                <option>AB</option>
+                                <option>BC</option>
+                                <option selected="">ON</option>
+                                < id="Province" name="Province" size="10" tabindex="15" />
+                            </select>
+                        </td>
+                    </tr>
+                
+                	<!---- Password Information --->
+                    <tr> <th>Password Information</th> </tr>
+
+                    <tr>
+                        <td label for="EMail">E-mail:</td>
+                        <td><input type="text" id="EMail" name="EMail" size="50" tabindex="21" /></td>
+                    </tr>
+                    <tr>
+                        <td for="PSW1">Password    :</td>
+                        <td><input type="password" id="PSW1" name="PSW1" size="30" tabindex="17" /></td>
+                    </tr>
+                    <tr>
+                        <td for="PSW2">Confirm:</td>
+                        <td><input type="password" id="PSW2" name="PSW2" size="30" tabindex="19" /></td>
+                    </tr>
+
+
+                </table>
+
+                <!---- Bottons --->
+                <table class="bottons" style="position: absolute; left: 10px; top: 360px">
+                    <tr>
+                        <td>
+                           <input type="bottom" id="CreateBtn" value="Create Member" name="CreateBtn" tabindex="19" onclick="setUpPage()" />
+                        </td>
+						<td id="errorDiv" class="errorDiv"></td>
+                    </tr>
+                </table>
+                </section>
+                
+                <!---- Bottons --->
+                <section id="profile">
+
+                <table class="profile" style="position: absolute; left: 575px; top: 20px">
+                
+                	<!---- Personal Information --->
+                    <tr> <th>Personal Profile</th> </tr>
+                    
+                    <tr>
+                        <td id="FNameProfT">First Name:</td>
+                        <td id="FNameProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="LNameProfT">Last Name:</td>
+                        <td id="LNameProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="AgeProfT">Age:</td>
+                        <td id="AgeProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="AddressProfT">Address:</td>
+                        <td id="AddressProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="AddressProfT0"></td>
+                        <td id="Address2Prof"></td>
+                    </tr>
+                    <tr>
+                        <td id="CityProfT">City:</td>
+                        <td id="CityProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="PCodeProfT">Post Code:</td>
+                        <td id="PCodeProf"></td>
+                    </tr>
+                    <tr>
+                        <td id="ProvinceProfT">Province</td>
+                        <td id="ProvinceProf"></td>
+                    </tr>
+                   	<tr>
+                        <td id="EMailProfT">E-mail:</td>
+                        <td id="EMailProf"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+
+                </table>
+                </section>
+
+
+
+            </form>
+
+            <script src="AppMember.js"></script>
+
+        </content></div><!-- #EndEditable -->
+	<!-- Content-->
+
+
+<!--FOOTER-->
+<div id="Footer" style="position: absolute; left: -100px; top: 640px; width: 1200px; height: 50px; z-index: 5" class="auto-style1">
+   <footer>
+	   <a href="Home.html">Home</a> |
+	   <a href="Listing.html">Listing</a> |
+	   <a href="Estimate.html">Estimate</a> |
+	   <a href="Membership.html">Membership</a> |
+	   <a href="Location.html">Location</a> |
+	   <a href="About.html">About Us</a> |
+	   <p id="copyright">&copy;&nbsp;Copyright Karla Adauto Rodrigues - COMP125 - Assignment 1</p>
+   </footer>
+</div><!-- Footer-->
+
+</div><!-- AllPages-->
+
+</body>
+<!-- #EndTemplate -->

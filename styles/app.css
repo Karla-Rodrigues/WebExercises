@@ -1,0 +1,38 @@
+﻿div#gHolder{
+    width: 600px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: silver;
+    padding: 10px
+}
+
+div#theBigImageHolder {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+}
+
+    div#theBigImageHolder > img{
+            width: 400px;
+            height: 400px;
+    }
+
+div#thumbnailsHolder {
+    width: 590px;
+    height: 100px;
+    background-color: white;
+    margin: 5px auto;
+    padding: 5px;
+}
+    div#thumbnailsHolder > img{
+        width: 90px;
+        height: 90px;
+        display: block;
+        float: left;
+        margin: 2px;
+        transition: border-radius 0.3s linear 0s;
+    }
+    div#thumbnailsHolder > img:hover{
+            border-radius: 100px;
+            cursor: pointer;
+    }

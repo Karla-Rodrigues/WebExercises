@@ -1,0 +1,32 @@
+﻿
+#LargeImage {
+    width: 400px;
+    height: 350px;
+}
+
+    #LargeImage > img {
+        width: 400px;
+        height: 350px;
+        margin: 5px;
+    }
+
+#SmallImage {
+    width: 400px;
+    height: 350px;
+    padding: 5px;
+    float: left;
+}
+
+    #SmallImage > img {
+        width: 100px;
+        height: 105px;
+        display: block;
+        float: left;
+        margin: 5px;
+        transition: border-radius 0.3s linear 0s;
+    }
+
+        #SmallImage > img:hover {
+            border-radius: 100px;
+            cursor: pointer;
+        }

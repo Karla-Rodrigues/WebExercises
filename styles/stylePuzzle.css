@@ -1,0 +1,119 @@
+﻿/* Filename: puzzle.css */
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* main content */
+#image {
+    float: left;
+}
+    #image img {
+        border: 5px solid #F3FFE3;
+    }
+#grid {
+   overflow: auto;
+   width: 266px;
+   margin: 0 auto;
+}
+#grid div {
+   float: left;
+   width: 88px;
+   height: 99px;
+   border: 1px solid #F3FFE3;
+}
+
+#top1, #bottom1 {
+   clear: left;
+}
+
+#pieces {
+   position: relative;
+   height: 110px;
+}
+
+#pieces div {
+   position: absolute;
+   width: 14.6667%;
+   margin: 1%;
+   padding: 1em 0;
+   height: 110px;
+}
+
+#piece1 {
+   left: 0px;
+   background: url("../images/pizza1.png") center center no-repeat;
+}
+
+#piece2 {
+    left: 16.6667%;
+    background: url("../images/pizza2.png") center center no-repeat;
+}
+
+#piece3 {
+    left: 33.3334%;
+    background: url("../images/pizza3.png") center center no-repeat;
+}
+
+#piece4 {
+    left: 50%;
+    background: url("../images/pizza4.png") center center no-repeat;
+}
+
+#piece5 {
+    left: 66.6667%;
+    background: url("../images/pizza5.png") center center no-repeat;
+}
+
+#piece6 {
+    left: 83.3334%;
+    background: url("../images/pizza6.png") center center no-repeat;
+}
+
+@media all and (max-width: 550px) {
+   #grid {
+      margin: 0 auto;
+      width: 134px;
+   }
+   #grid div {
+      width: 44px;
+      height: 49px;
+      
+   }
+   #image {
+      float: left;
+      width: 100%;
+      text-align: center;
+      margin: 0 0 20px;
+   }
+    #piece1 {
+        background: url("../images/pizza1.png") center center no-repeat;
+    }
+
+    #piece2 {
+        background: url("../images/pizza2.png") center center no-repeat;
+    }
+
+    #piece3 {
+        background: url("../images/pizza3.png") center center no-repeat;
+    }
+
+    #piece4 {
+        background: url("../images/pizza4.png") center center no-repeat;
+    }
+
+    #piece5 {
+        background: url("../images/pizza5.png") center center no-repeat;
+    }
+
+    #piece6 {
+        background: url("../images/pizza6.png") center center no-repeat;
+    }
+}

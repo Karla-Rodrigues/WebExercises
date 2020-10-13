@@ -1,0 +1,94 @@
+﻿/*  
+    <!--
+      Karla Rodrigues #300997958
+      Final Exame
+      Winter 2019
+   -->
+*/
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+ol, ul {
+   list-style: none;
+}
+
+/* page header */
+header {
+    background: #FFCF40;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 48px;
+    text-align: center;
+    line-height: 1.5em;
+    border-bottom: 1px solid black;
+}
+
+/* main content */
+article {
+    width: 100%;
+    text-align: center;
+    background: ivory;
+    overflow: auto;
+}
+
+h1 {
+    font-size: 24px;
+}
+h2 {
+   font-weight: bold;
+   font-size: 30px;
+   text-align: center;
+}
+
+/* form */
+form {
+   text-align: left;
+   padding: 2em;
+   background: ivory;
+   border: 1px solid black;
+   position: relative;
+   margin: 1em auto;
+   font-size: 1em;
+}
+
+#zipset, #csset {
+   visibility: hidden;
+}
+
+input, label {
+   float: left;
+   margin-bottom: 0.4em;
+}
+
+label {
+   width: 12em;
+   text-align: right;
+   margin-right: 0.4em;
+   line-height: 1.4em;
+}
+
+#uslabel {
+   width: auto;
+   margin-left: 1.4em;
+}
+
+#zipset label, #csset label {
+   clear: left;
+}
+
+#city {
+   width: 12em;
+}
+
+#state {
+   width: 3em;
+}
+
+#zip {
+   width: 6em;
+}
